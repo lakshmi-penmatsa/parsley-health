@@ -1,0 +1,16 @@
+{
+  "name": "parsley",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "7.3.1",
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "@playwright/test": "^1.27.1",
+    "playwright": "^1.27.1"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "test:e2e": "cucumber-js --require cucumber.conf.js --require tests/stepDefinitions/**/*.js --format @cucumber/pretty-formatter"
+  }
+}
